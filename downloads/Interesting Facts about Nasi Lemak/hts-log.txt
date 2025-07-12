@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 11 Jul 2025 20:19:25 at https://kualalumpur.intercontinental.com/blog/interesting-facts-about-nasi-lemak +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://kualalumpur.intercontinental.com/blog/interesting-facts-about-nasi-lemak -O1 "C:\My Web Sites\Interesting Facts about Nasi Lemak" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:20:08	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://kualalumpur.intercontinental.com/blog/interesting-facts-about-nasi-lemak)
+20:21:46	Error: 	"Forbidden" (403) at link https://ejmse4m6ybw.exactdn.com/site/themes/ich/assets/images/hotel-indigo-grey.svg?00b10decc68af693a76308babe6a41e8 (from https://ejmse4m6ybw.exactdn.com/site/themes/ich/assets/app.css?v=20231027)
+20:22:24	Error: 	"Not Found" (404) at link https://kualalumpur.intercontinental.com/blog/6-date-ideas-for-valentine-s-day-in-kuala-lumpur (from https://kualalumpur.intercontinental.com/blog/family-friendly-activities-in-kl)
+20:22:48	Error: 	"Not Found" (404) at link https://kualalumpur.intercontinental.com/blog/eco-tigers-edu-hike (from https://kualalumpur.intercontinental.com/blog/planet)
+20:22:48	Error: 	"Not Found" (404) at link https://kualalumpur.intercontinental.com/blog/people (from https://kualalumpur.intercontinental.com/blog/planet)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 23 seconds : 378 links scanned, 371 files written (28100950 bytes overall) [24901712 bytes received at 122668 bytes/sec], 5326171 bytes transferred using HTTP compression in 64 files, ratio 29%, 19.8 requests per connection
+(5 errors, 0 warnings, 0 messages)
