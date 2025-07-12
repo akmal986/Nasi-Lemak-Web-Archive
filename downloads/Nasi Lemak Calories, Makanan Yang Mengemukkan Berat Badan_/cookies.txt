@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+xhr.invl.co	TRUE	/	FALSE	1999999999	AWSALB	OoPdQYqlNYXO96prOAf205gMs3yu6MjFNThAq102pDpYPqw54atThzdEDcBBaonCA7MbgwztDG8InOMRN/f2BPEDsmK7+MHZ3hGQ9erCDh7CTlkndMf9Hn7MoMZk
+xhr.invl.co	TRUE	/	FALSE	1999999999	AWSALBCORS	OoPdQYqlNYXO96prOAf205gMs3yu6MjFNThAq102pDpYPqw54atThzdEDcBBaonCA7MbgwztDG8InOMRN/f2BPEDsmK7+MHZ3hGQ9erCDh7CTlkndMf9Hn7MoMZk
+xhr.invl.co	TRUE	/	FALSE	1999999999	SameSite	None
+.izooto.com	TRUE	/	FALSE	1999999999	__cf_bm	g7koYYNP9F.1O21FxK4K4SXt3DdJwW9_Wt9Fd2O7NSc-1752305424-1.0.1.1-9EkjxXh8kZ8QdPIF5cpcityc2JO7fAH2lPCuM5fxO96LoAkelfQSFaiHUE1qak1cbsKFBQbwpoO5HyUs._X3OXgV5reA62vigbLlzEz5kXo
+cdn.izooto.com	TRUE	/	FALSE	1999999999	SameSite	None
+
