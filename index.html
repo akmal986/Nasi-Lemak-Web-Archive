@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nasi Lemak Website</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <div class="logo">NASI LEMAK</div>
+      <div class="right-side">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="recipe.html">Recipe</a></li>
+            <li><a href="archive.html">Archive</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>WELCOME TO NASI LEMAK WEBSITE</h1>
+    <p>You can see the archived website of Nasi lemak here.</p>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+      <div class="slide fade">
+  <img src="images/nasi-lemak-1.jpg" alt="Nasi Lemak 1">
+  <div class="caption">Nasi Lemak Tradisional</div>
+</div>
+
+<div class="slide fade">
+  <img src="images/nasi-lemak-2.jpg" alt="Nasi Lemak 2">
+  <div class="caption">Nasi Lemak Ayam Rempah</div>
+</div>
+
+<div class="slide fade">
+  <img src="images/nasi-lemak-3.jpg" alt="Nasi Lemak 3">
+  <div class="caption">Nasi Lemak Kerabu</div>
+</div>
+
+<div class="dots-container">
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+      <!-- Arrows -->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+  </section>
+
+  <!-- JS for slideshow -->
+<script>
+  let slideIndex = 0;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+
+  function showSlide(n) {
+    if (n >= slides.length) slideIndex = 0;
+    else if (n < 0) slideIndex = slides.length - 1;
+    else slideIndex = n;
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+
+    slides[slideIndex].style.display = "block";
+    dots[slideIndex].classList.add("active");
+  }
+
+  function plusSlides(n) {
+    showSlide(slideIndex + n);
+  }
+
+  function currentSlide(n) {
+    showSlide(n);
+  }
+
+  function autoSlide() {
+    showSlide(slideIndex + 1);
+    setTimeout(autoSlide, 4000);
+  }
+
+  showSlide(slideIndex);
+  setTimeout(autoSlide, 4000);
+</script>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-flex">
+    <div class="footer-left">
+      <h4>NASI LEMAK</h4>
+      <p>&copy; 2025 Nasi Lemak Archive. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="recipe.html">Recipe</a>
+      <a href="archive.html">Archive</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
