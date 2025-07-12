@@ -1,0 +1,430 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background as per image */
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar reuse styles (assumes it's already styled globally) */
+
+/* About Hero Section */
+.about-hero {
+    position: relative;
+    background: url('../images/about-hero.jpg') no-repeat center center/cover; /* Placeholder image */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.about-overlay h1 {
+    font-size: 42px;
+    color: #f5a9a9; /* Light red/pink from image */
+    margin-bottom: 20px;
+}
+
+.about-overlay p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.about-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.vision-btn {
+    background-color: #ca7373; /* Matches active link/login button */
+}
+
+.vision-btn:hover {
+    background-color: #b05e5e;
+}
+
+.mission-btn {
+    background-color: #2fc3b8; /* Teal color from image */
+}
+
+.mission-btn:hover {
+    background-color: #259e95;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.icon-box {
+    text-align: center;
+    color: white;
+}
+
+.icon-box img {
+    width: 50px;
+    height: 50px; /* Ensure consistent size */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-bottom: 8px;
+    filter: brightness(90%); /* Slight filter for visual effect */
+    border-radius: 50%; /* If images are circular */
+}
+
+/* About Content Section (Vision/Mission/Motto) */
+.about-content {
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.about-content h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2fc3b8; /* Teal color */
+    margin-bottom: 40px;
+}
+
+.content-box {
+    background-color: #2a2a2a; /* Darker box background */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-box h3 {
+    color: #2fc3b8; /* Teal color */
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.content-box p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.emoji {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 18px;
+    color: #2fc3b8; /* Teal color */
+}
+
+/* Members Section */
+.members-section {
+    background-color: #1e1e1e;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.members-section h2, .our-team-heading, .our-clients-heading {
+    font-size: 36px;
+    color: #f5a9a9; /* Light red/pink from image */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+}
+
+.member-card {
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    border: 3px solid #2fc3b8; /* Teal border */
+}
+
+.member-card h3 {
+    color: #eaeaea;
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.member-title {
+    color: #f5a9a9; /* Light red/pink */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.member-description {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Our Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+}
+
+.team-card {
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+    border: 3px solid #ca7373; /* Red/pink border */
+}
+
+.team-card h4 {
+    color: #eaeaea;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.team-social {
+    margin-top: 15px;
+}
+
+.team-social a {
+    color: #2fc3b8; /* Teal for social icons */
+    font-size: 20px;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.team-social a:hover {
+    color: #f5a9a9; /* Light red/pink on hover */
+}
+
+/* Our Clients Section */
+.clients-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.client-logo {
+    font-size: 60px;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.client-logo:hover {
+    color: #2fc3b8; /* Teal on hover */
+}
+
+/* Contacts Section */
+.contacts-section {
+    background-color: #1e1e1e;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacts-section h2 {
+    font-size: 36px;
+    color: #f5a9a9; /* Light red/pink */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contacts-intro {
+    color: #bbb;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.7;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: #2fc3b8; /* Teal color */
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    color: #eaeaea;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #bbb;
+    font-size: 16px;
+}
+
+/* Office Locations Section */
+.locations-section {
+    background-color: #1e1e1e;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.locations-section h2 {
+    font-size: 36px;
+    color: #f5a9a9; /* Light red/pink */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.location-card {
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.location-card h3 {
+    color: #eaeaea;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.map-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+}
+
+.location-card p {
+    color: #bbb;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .about-hero {
+        height: auto;
+        padding: 40px 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-buttons button {
+        margin: 10px 5px;
+    }
+
+    .members-section h2, .our-team-heading, .our-clients-heading, .contacts-section h2, .locations-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .member-grid, .team-grid, .contact-grid, .location-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contacts-intro {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .client-logo {
+        font-size: 45px;
+    }
+}
